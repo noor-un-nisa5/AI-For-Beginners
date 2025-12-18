@@ -3,10 +3,9 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
-
+import BookChatbot from "@site/src/components/BookChatbot";
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
-
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
@@ -27,7 +26,6 @@ function HomepageHeader() {
     </header>
   );
 }
-
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
@@ -37,6 +35,7 @@ export default function Home() {
       <HomepageHeader />
       <main>
         <HomepageFeatures />
+        <BookChatbot />
       </main>
     </Layout>
   );
